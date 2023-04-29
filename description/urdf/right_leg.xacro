@@ -1,4 +1,82 @@
 <?xml version="1.0"?>
 <robot xmlns:xacro="http://www.ros.org/wiki/xacro"  name="robot">
 
+    <!-- FEMUR LINK -->
+
+    <joint name="right_hip-femur_joint" type="revolute">
+        <parent link="right_hip"/>
+        <child link="right_femur"/>
+        <origin xyz="-0.03 0.00135 -0.0661" rpy="0 0 0"/>
+        <axis xyz="0 -1 0"/>
+        <limit lower="0" upper="${pi/4}" velocity="100" effort="100"/>
+    </joint>
+
+    <link name="right_femur">
+        <visual>
+            <origin xyz="0 0 0" rpy="${pi/2} 0 0"/>
+            <geometry>
+                <mesh filename="package://droid/description/meshes/legs/femur.STL" scale="0.001 0.001 0.001"/>
+            </geometry>
+            <material name="blue"/>
+        </visual>
+        <collision>
+            <origin xyz="0 0 0" rpy="${pi/2} 0 0"/>
+            <geometry>
+                <mesh filename="package://droid/description/meshes/legs/femur.STL" scale="0.001 0.001 0.001"/>
+            </geometry>
+        </collision>
+    </link>
+
+    <!-- TIBIA LINK -->
+
+    <joint name="right_femur-tibia_joint" type="revolute">
+        <parent link="right_femur"/>
+        <child link="right_tibia"/>
+        <origin xyz="0 0 -0.08" rpy="0 0 0"/>
+        <axis xyz="0 1 0"/>
+        <limit lower="0" upper="${pi/2}" velocity="100" effort="100"/>
+    </joint>
+
+    <link name="right_tibia">
+        <visual>
+            <origin xyz="0 0 0" rpy="${pi/2} 0 0"/>
+            <geometry>
+                <mesh filename="package://droid/description/meshes/legs/tibia.STL" scale="0.001 0.001 0.001"/>
+            </geometry>
+            <material name="blue"/>
+        </visual>
+        <collision>
+            <origin xyz="0 0 0" rpy="${pi/2} 0 0"/>
+            <geometry>
+                <mesh filename="package://droid/description/meshes/legs/tibia.STL" scale="0.001 0.001 0.001"/>
+            </geometry>
+        </collision>
+    </link>
+
+    <!-- FOOT LINK -->
+
+    <joint name="right_tibia-foot_joint" type="revolute">
+        <parent link="right_tibia"/>
+        <child link="right_foot"/>
+        <origin xyz="0 0 -0.0625" rpy="0 0 0"/>
+        <axis xyz="0 1 0"/>
+        <limit lower="${-pi/4}" upper="${pi/4}" velocity="100" effort="100"/>
+    </joint>
+
+    <link name="right_foot">
+        <visual>
+            <origin xyz="0.002 0 -0.02174" rpy="${pi/2} 0 ${pi}"/>
+            <geometry>
+                <mesh filename="package://droid/description/meshes/legs/foot.STL" scale="0.001 0.001 0.001"/>
+            </geometry>
+            <material name="blue"/>
+        </visual>
+        <collision>
+            <origin xyz="0.002 0 -0.02174" rpy="${pi/2} 0 ${pi}"/>
+            <geometry>
+                <mesh filename="package://droid/description/meshes/legs/foot.STL" scale="0.001 0.001 0.001"/>
+            </geometry>
+        </collision>
+    </link>
+
 </robot>
