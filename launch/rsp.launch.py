@@ -12,7 +12,7 @@ import xacro
 
 def generate_launch_description():
 
-    # Check if we're told to use sim time
+    # Check to use sim time
     use_sim_time = LaunchConfiguration('use_sim_time')
 
     # Process the URDF file
@@ -29,8 +29,7 @@ def generate_launch_description():
         parameters=[params]
     )
 
-
-    # Launch!
+    # Launch
     return LaunchDescription([
         DeclareLaunchArgument(
             'use_sim_time',
