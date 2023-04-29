@@ -1,9 +1,0 @@
-/home/truncatedrhino/dev_ws/src/droid/build/droid/CMakeFiles/uninstall.dir
-/home/truncatedrhino/dev_ws/src/droid/build/droid/CMakeFiles/droid_uninstall.dir
-/home/truncatedrhino/dev_ws/src/droid/build/droid/CMakeFiles/test.dir
-/home/truncatedrhino/dev_ws/src/droid/build/droid/CMakeFiles/edit_cache.dir
-/home/truncatedrhino/dev_ws/src/droid/build/droid/CMakeFiles/rebuild_cache.dir
-/home/truncatedrhino/dev_ws/src/droid/build/droid/CMakeFiles/list_install_components.dir
-/home/truncatedrhino/dev_ws/src/droid/build/droid/CMakeFiles/install.dir
-/home/truncatedrhino/dev_ws/src/droid/build/droid/CMakeFiles/install/local.dir
-/home/truncatedrhino/dev_ws/src/droid/build/droid/CMakeFiles/install/strip.dir

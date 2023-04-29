@@ -1,1 +1,0 @@
-/home/truncatedrhino/dev_ws/src/droid/build/droid/ament_cmake_environment_hooks/local_setup.sh

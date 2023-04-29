@@ -1,1 +1,0 @@
-/home/truncatedrhino/dev_ws/src/droid/launch/rsp.launch.py

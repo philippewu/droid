@@ -1,8 +1,0 @@
-source;share/droid/hook/cmake_prefix_path.ps1
-source;share/droid/hook/cmake_prefix_path.dsv
-source;share/droid/hook/cmake_prefix_path.sh
-source;share/droid/local_setup.bash
-source;share/droid/local_setup.dsv
-source;share/droid/local_setup.ps1
-source;share/droid/local_setup.sh
-source;share/droid/local_setup.zsh
