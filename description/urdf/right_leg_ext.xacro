@@ -4,8 +4,6 @@
     <xacro:include filename="colors.xacro"/>
     <xacro:include filename="robot_core.xacro"/>
     <xacro:include filename="left_leg.xacro"/>
-    <xacro:include filename="left_leg_ext.xacro"/>
     <xacro:include filename="right_leg.xacro"/>
-    <xacro:include filename="right_leg_ext.xacro"/>
 
 </robot>

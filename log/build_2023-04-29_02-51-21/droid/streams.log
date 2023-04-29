@@ -1,0 +1,47 @@
+[0.012s] Invoking command in '/home/truncatedrhino/dev_ws/src/droid/build/droid': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/truncatedrhino/dev_ws/src/droid/build/droid -- -j4 -l4
+[0.050s] Invoked command in '/home/truncatedrhino/dev_ws/src/droid/build/droid' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/truncatedrhino/dev_ws/src/droid/build/droid -- -j4 -l4
+[0.075s] Invoking command in '/home/truncatedrhino/dev_ws/src/droid/build/droid': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /home/truncatedrhino/dev_ws/src/droid/build/droid
+[0.081s] -- Install configuration: ""
+[0.081s] -- Execute custom install script
+[0.081s] -- Up-to-date symlink: /home/truncatedrhino/dev_ws/src/droid/install/droid/share/droid/config/empty.yaml
+[0.082s] -- Up-to-date symlink: /home/truncatedrhino/dev_ws/src/droid/install/droid/share/droid/config/view_droid.rviz
+[0.082s] -- Up-to-date symlink: /home/truncatedrhino/dev_ws/src/droid/install/droid/share/droid/description/meshes/.DS_Store
+[0.082s] -- Up-to-date symlink: /home/truncatedrhino/dev_ws/src/droid/install/droid/share/droid/description/meshes/chassis.STL
+[0.082s] -- Up-to-date symlink: /home/truncatedrhino/dev_ws/src/droid/install/droid/share/droid/description/meshes/left_hip.STL
+[0.082s] -- Up-to-date symlink: /home/truncatedrhino/dev_ws/src/droid/install/droid/share/droid/description/meshes/legs/calves.STL
+[0.082s] -- Up-to-date symlink: /home/truncatedrhino/dev_ws/src/droid/install/droid/share/droid/description/meshes/legs/femur.STL
+[0.082s] -- Up-to-date symlink: /home/truncatedrhino/dev_ws/src/droid/install/droid/share/droid/description/meshes/legs/foot.STL
+[0.082s] -- Up-to-date symlink: /home/truncatedrhino/dev_ws/src/droid/install/droid/share/droid/description/meshes/legs/hamstrings.STL
+[0.082s] -- Up-to-date symlink: /home/truncatedrhino/dev_ws/src/droid/install/droid/share/droid/description/meshes/legs/knee_tendon.STL
+[0.082s] -- Up-to-date symlink: /home/truncatedrhino/dev_ws/src/droid/install/droid/share/droid/description/meshes/legs/left_quadricep_linkage.STL
+[0.082s] -- Up-to-date symlink: /home/truncatedrhino/dev_ws/src/droid/install/droid/share/droid/description/meshes/legs/quadriceps.STL
+[0.082s] -- Up-to-date symlink: /home/truncatedrhino/dev_ws/src/droid/install/droid/share/droid/description/meshes/legs/right_quadricep_linkage.STL
+[0.082s] -- Up-to-date symlink: /home/truncatedrhino/dev_ws/src/droid/install/droid/share/droid/description/meshes/legs/tibia.STL
+[0.083s] -- Up-to-date symlink: /home/truncatedrhino/dev_ws/src/droid/install/droid/share/droid/description/meshes/right_hip.STL
+[0.083s] -- Up-to-date symlink: /home/truncatedrhino/dev_ws/src/droid/install/droid/share/droid/description/urdf/colors.xacro
+[0.083s] -- Up-to-date symlink: /home/truncatedrhino/dev_ws/src/droid/install/droid/share/droid/description/urdf/left_leg.xacro
+[0.083s] -- Symlinking: /home/truncatedrhino/dev_ws/src/droid/install/droid/share/droid/description/urdf/left_leg_ext.xacro
+[0.090s] -- Up-to-date symlink: /home/truncatedrhino/dev_ws/src/droid/install/droid/share/droid/description/urdf/right_leg.xacro
+[0.090s] -- Symlinking: /home/truncatedrhino/dev_ws/src/droid/install/droid/share/droid/description/urdf/right_leg_ext.xacro
+[0.096s] -- Up-to-date symlink: /home/truncatedrhino/dev_ws/src/droid/install/droid/share/droid/description/urdf/robot.urdf.xacro
+[0.096s] -- Up-to-date symlink: /home/truncatedrhino/dev_ws/src/droid/install/droid/share/droid/description/urdf/robot_core.xacro
+[0.096s] -- Up-to-date symlink: /home/truncatedrhino/dev_ws/src/droid/install/droid/share/droid/description/urdf/robot_ext.urdf.xacro
+[0.096s] -- Up-to-date symlink: /home/truncatedrhino/dev_ws/src/droid/install/droid/share/droid/description/urdf/robot_sim.urdf.xacro
+[0.096s] -- Up-to-date symlink: /home/truncatedrhino/dev_ws/src/droid/install/droid/share/droid/launch/rsp.launch.py
+[0.096s] -- Up-to-date symlink: /home/truncatedrhino/dev_ws/src/droid/install/droid/share/droid/worlds/empty.world
+[0.097s] -- Up-to-date symlink: /home/truncatedrhino/dev_ws/src/droid/install/droid/share/ament_index/resource_index/package_run_dependencies/droid
+[0.097s] -- Up-to-date symlink: /home/truncatedrhino/dev_ws/src/droid/install/droid/share/ament_index/resource_index/parent_prefix_path/droid
+[0.097s] -- Up-to-date symlink: /home/truncatedrhino/dev_ws/src/droid/install/droid/share/droid/environment/ament_prefix_path.sh
+[0.097s] -- Up-to-date symlink: /home/truncatedrhino/dev_ws/src/droid/install/droid/share/droid/environment/ament_prefix_path.dsv
+[0.097s] -- Up-to-date symlink: /home/truncatedrhino/dev_ws/src/droid/install/droid/share/droid/environment/path.sh
+[0.097s] -- Up-to-date symlink: /home/truncatedrhino/dev_ws/src/droid/install/droid/share/droid/environment/path.dsv
+[0.097s] -- Up-to-date symlink: /home/truncatedrhino/dev_ws/src/droid/install/droid/share/droid/local_setup.bash
+[0.098s] -- Up-to-date symlink: /home/truncatedrhino/dev_ws/src/droid/install/droid/share/droid/local_setup.sh
+[0.098s] -- Up-to-date symlink: /home/truncatedrhino/dev_ws/src/droid/install/droid/share/droid/local_setup.zsh
+[0.098s] -- Up-to-date symlink: /home/truncatedrhino/dev_ws/src/droid/install/droid/share/droid/local_setup.dsv
+[0.098s] -- Symlinking: /home/truncatedrhino/dev_ws/src/droid/install/droid/share/droid/package.dsv
+[0.105s] -- Up-to-date symlink: /home/truncatedrhino/dev_ws/src/droid/install/droid/share/ament_index/resource_index/packages/droid
+[0.106s] -- Up-to-date symlink: /home/truncatedrhino/dev_ws/src/droid/install/droid/share/droid/cmake/droidConfig.cmake
+[0.106s] -- Up-to-date symlink: /home/truncatedrhino/dev_ws/src/droid/install/droid/share/droid/cmake/droidConfig-version.cmake
+[0.106s] -- Up-to-date symlink: /home/truncatedrhino/dev_ws/src/droid/install/droid/share/droid/package.xml
+[0.109s] Invoked command in '/home/truncatedrhino/dev_ws/src/droid/build/droid' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /home/truncatedrhino/dev_ws/src/droid/build/droid

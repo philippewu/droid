@@ -15,7 +15,9 @@
 /home/truncatedrhino/dev_ws/src/droid/install/droid/share/droid/description/meshes/right_hip.STL
 /home/truncatedrhino/dev_ws/src/droid/install/droid/share/droid/description/urdf/colors.xacro
 /home/truncatedrhino/dev_ws/src/droid/install/droid/share/droid/description/urdf/left_leg.xacro
+/home/truncatedrhino/dev_ws/src/droid/install/droid/share/droid/description/urdf/left_leg_ext.xacro
 /home/truncatedrhino/dev_ws/src/droid/install/droid/share/droid/description/urdf/right_leg.xacro
+/home/truncatedrhino/dev_ws/src/droid/install/droid/share/droid/description/urdf/right_leg_ext.xacro
 /home/truncatedrhino/dev_ws/src/droid/install/droid/share/droid/description/urdf/robot.urdf.xacro
 /home/truncatedrhino/dev_ws/src/droid/install/droid/share/droid/description/urdf/robot_core.xacro
 /home/truncatedrhino/dev_ws/src/droid/install/droid/share/droid/description/urdf/robot_ext.urdf.xacro
