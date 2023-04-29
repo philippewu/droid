@@ -27,6 +27,12 @@
                 <mesh filename="package://droid/description/meshes/chassis.STL" scale="0.001 0.001 0.001"/>
             </geometry>
         </collision>
+        <inertial>
+            <origin xyz="-0.00335 0 0.04408" rpy="0 0 0"/>
+            <mass value="0.710"/>
+            <inertia ixx="0.001020342"  ixy="-0.000029751"  ixz="0.000081459"
+            iyy="0.001357339" iyz="-0.000026283" izz="0.001569161"/>
+        </inertial>
     </link>
 
     <!-- LEFT HIP LINK -->
@@ -53,6 +59,12 @@
                 <mesh filename="package://droid/description/meshes/left_hip.STL" scale="0.001 0.001 0.001"/>
             </geometry>
         </collision>
+        <inertial>
+            <origin xyz="-0.001594 -0.00051 -0.04019" rpy="0 0 0"/>
+            <mass value="0.14121"/>
+            <inertia ixx="0.000068413"  ixy="-0.000000090"  ixz="0.000027110"
+            iyy="0.000093037" iyz="0.000000657" izz="0.000068140"/>
+        </inertial>
     </link>
 
     <!-- RIGHT HIP LINK -->
@@ -79,6 +91,13 @@
                 <mesh filename="package://droid/description/meshes/right_hip.STL" scale="0.001 0.001 0.001"/>
             </geometry>
         </collision>
+        <inertial>
+            <origin xyz="-0.001594 0.00051 -0.04019" rpy="0 0 0"/>
+            <mass value="0.14121"/>
+            <inertia ixx="0.000068413"  ixy="0.000000090"  ixz="0.000027110"
+            iyy="0.000093037" iyz="-0.000000657" izz="0.000068140"/>
+        </inertial>
     </link>
+    
 
 </robot>

@@ -25,6 +25,12 @@
                 <mesh filename="package://droid/description/meshes/legs/femur.STL" scale="0.001 0.001 0.001"/>
             </geometry>
         </collision>
+        <inertial>
+            <origin xyz="0.00119 0 -0.03859" rpy="0 0 0"/>
+            <mass value="0.04038"/>
+            <inertia ixx="0.000024549"  ixy="0"  ixz="0.000000183"
+            iyy="0.000018945" iyz="0" izz="0.000007508"/>
+        </inertial>
     </link>
 
     <!-- TIBIA LINK -->
@@ -51,6 +57,12 @@
                 <mesh filename="package://droid/description/meshes/legs/tibia.STL" scale="0.001 0.001 0.001"/>
             </geometry>
         </collision>
+        <inertial>
+            <origin xyz="0.00447 0 -0.02276" rpy="0 0 0"/>
+            <mass value="0.01338"/>
+            <inertia ixx="0.000008839"  ixy="0"  ixz="0.000001782"
+            iyy="0.000009491" iyz="0" izz="0.000001336"/>
+        </inertial>
     </link>
 
     <!-- FOOT LINK -->
@@ -77,6 +89,12 @@
                 <mesh filename="package://droid/description/meshes/legs/foot.STL" scale="0.001 0.001 0.001"/>
             </geometry>
         </collision>
+        <inertial>
+            <origin xyz="-0.00689 0 -0.03048" rpy="0 0 0"/>
+            <mass value="0.04904"/>
+            <inertia ixx="0.000023179"  ixy="0"  ixz="-0.000001838"
+            iyy="0.000038895" iyz="0" izz="0.000040501"/>
+        </inertial>
     </link>
 
 </robot>

@@ -1,0 +1,4 @@
+source;share/droid/local_setup.bash
+source;share/droid/local_setup.dsv
+source;share/droid/local_setup.sh
+source;share/droid/local_setup.zsh
