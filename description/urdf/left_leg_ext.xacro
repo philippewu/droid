@@ -1,5 +1,146 @@
 <?xml version="1.0"?>
 <robot xmlns:xacro="http://www.ros.org/wiki/xacro"  name="robot">
 
+    <!-- QUAD_LINK LINK -->
+
+    <joint name="left_hip-quad_link_joint" type="revolute">
+        <parent link="left_hip"/>
+        <child link="left_quad_link"/>
+        <origin xyz="0 -0.00135 -0.0451" rpy="0 0 0"/>
+        <axis xyz="0 -1 0"/>
+        <limit lower="${-pi/2}" upper="${pi/6}" velocity="100" effort="100"/>
+    </joint>
+
+    <link name="left_quad_link">
+        <visual>
+            <origin xyz="0 0 0" rpy="${pi/2} 0 0"/>
+            <geometry>
+                <mesh filename="package://droid/description/meshes/legs/left_quadricep_linkage.STL" scale="0.001 0.001 0.001"/>
+            </geometry>
+            <material name="blue"/>
+        </visual>
+        <collision>
+            <origin xyz="0 0 0" rpy="${pi/2} 0 0"/>
+            <geometry>
+                <mesh filename="package://droid/description/meshes/legs/left_quadricep_linkage.STL" scale="0.001 0.001 0.001"/>
+            </geometry>
+        </collision>
+        <inertial>
+            <origin xyz="0.01177 -0.00039 0" rpy="0 0 0"/>
+            <mass value="0.00792"/>
+            <inertia ixx="0.000004392"  ixy="0.000000003"  ixz="0.000000183"
+            iyy="0.000001356" iyz="0" izz="0.000005470"/>
+        </inertial>
+    </link>
+
+    <!-- QUAD LINK -->
+
+    <joint name="left_quad_link-quad_joint" type="revolute">
+        <parent link="left_quad_link"/>
+        <child link="left_quad"/>
+        <origin xyz="0.025 0 0" rpy="0 0 0"/>
+        <axis xyz="0 1 0"/>
+        <limit lower="0" upper="${pi/2}" velocity="100" effort="100"/>
+    </joint>
+
+    <link name="left_quad">
+        <visual>
+            <origin xyz="0 0 0" rpy="${pi/2} 0 0"/>
+            <geometry>
+                <mesh filename="package://droid/description/meshes/legs/quadriceps.STL" scale="0.001 0.001 0.001"/>
+            </geometry>
+            <material name="blue"/>
+        </visual>
+        <collision>
+            <origin xyz="0 0 0" rpy="${pi/2} 0 0"/>
+            <geometry>
+                <mesh filename="package://droid/description/meshes/legs/quadriceps.STL" scale="0.001 0.001 0.001"/>
+            </geometry>
+        </collision>
+        <inertial>
+            <origin xyz="0.0008 0 -0.04113" rpy="0 0 0"/>
+            <mass value="0.04395"/>
+            <inertia ixx="0.000072473"  ixy="0"  ixz="-0.000000313"
+            iyy="0.000032556" iyz="0" izz="0.000042927"/>
+        </inertial>
+    </link>
+
+    <!-- HAMSTRING LINK -->
+
+    <joint name="left_hip-hamstring_joint" type="revolute">
+        <parent link="left_hip"/>
+        <child link="left_hamstring"/>
+        <origin xyz="-0.065 -0.00135 -0.0661" rpy="0 0 0"/>
+        <axis xyz="0 1 0"/>
+        <limit lower="${-pi/4}" upper="${pi/4}" velocity="100" effort="100"/>
+    </joint>
+
+    <link name="left_hamstring">
+        <visual>
+            <origin xyz="0 0.0045 -0.08" rpy="${pi/2} 0 0"/>
+            <geometry>
+                <mesh filename="package://droid/description/meshes/legs/hamstrings.STL" scale="0.001 0.001 0.001"/>
+            </geometry>
+            <material name="blue"/>
+        </visual>
+        <collision>
+            <origin xyz="0 0.0045 -0.08" rpy="${pi/2} 0 0"/>
+            <geometry>
+                <mesh filename="package://droid/description/meshes/legs/hamstrings.STL" scale="0.001 0.001 0.001"/>
+            </geometry>
+        </collision>
+    </link>
+
+    <!-- KNEE TENDON LINK -->
+
+    <joint name="left_femur-knee_tendon_joint" type="revolute">
+        <parent link="left_femur"/>
+        <child link="left_knee_tendon"/>
+        <origin xyz="0 0 -0.08" rpy="0 0 0"/>
+        <axis xyz="0 1 0"/>
+        <limit lower="${-pi/4}" upper="${pi/4}" velocity="100" effort="100"/>
+    </joint>
+
+    <link name="left_knee_tendon">
+        <visual>
+            <origin xyz="0 0 0" rpy="${pi/2} 0 0"/>
+            <geometry>
+                <mesh filename="package://droid/description/meshes/legs/knee_tendon.STL" scale="0.001 0.001 0.001"/>
+            </geometry>
+            <material name="blue"/>
+        </visual>
+        <collision>
+            <origin xyz="0 0 0" rpy="${pi/2} 0 0"/>
+            <geometry>
+                <mesh filename="package://droid/description/meshes/legs/knee_tendon.STL" scale="0.001 0.001 0.001"/>
+            </geometry>
+        </collision>
+    </link>
+
+    <!-- CALF LINK -->
+
+    <joint name="left_knee_tendon-calves_joint" type="revolute">
+        <parent link="left_knee_tendon"/>
+        <child link="left_calves"/>
+        <origin xyz="-0.025 0 0" rpy="0 0 0"/>
+        <axis xyz="0 1 0"/>
+        <limit lower="${-pi/4}" upper="${pi/4}" velocity="100" effort="100"/>
+    </joint>
+
+    <link name="left_calves">
+        <visual>
+            <origin xyz="0 -0.0015 0" rpy="${pi/2} 0 0"/>
+            <geometry>
+                <mesh filename="package://droid/description/meshes/legs/calves.STL" scale="0.001 0.001 0.001"/>
+            </geometry>
+            <material name="blue"/>
+        </visual>
+        <collision>
+            <origin xyz="0 -0.0015 0" rpy="${pi/2} 0 0"/>
+            <geometry>
+                <mesh filename="package://droid/description/meshes/legs/calves.STL" scale="0.001 0.001 0.001"/>
+            </geometry>
+        </collision>
+    </link>
 
 </robot>
